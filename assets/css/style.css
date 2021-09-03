@@ -8,13 +8,14 @@
 
 body {
     position: relative;
-    background-color: #6edbc2;
+    background-color: #5b9cbe;
 }
 
 header {
+    position: relative;
     width: 100%;
-    height: 150px;
-    margin-bottom: 30px;
+    height: 300px;
+    margin-bottom: 0px;
     background-color: var(--textColor);
     border-color: black;
     color: var(--textColor);
@@ -23,17 +24,27 @@ header {
 
 h1{
     font-size: 48px;
-    display: inline-block
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.me { 
+    display: inline-flex;
+    margin: 10px;
+    border-radius: 90px;
 }
 
 nav {
-    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 nav ul li {
-    flex-wrap: unset;
+    display: flex;
+    flex-wrap: wrap;
     display: inline-block;
-    padding: 50px;
+    padding: 30px;
 }
 
 nav ul li a {
@@ -44,22 +55,24 @@ nav ul li a {
 }
 
 article {
+    display: inline-flex;
+}
+
+article h2 {
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+}
+
+article p {
+    border-radius: 10px;
     border-width: 100%;
     border-color: var(--textColor);
     border-width: 5px;
     height: 200px;
     border-style: groove;
     margin: 10px;
-}
-
-article h2 {
-    font-size: 24px;
+    background-color: #041a28;
+    color: var(--textColor);
     text-align: center;
-    padding: 10px;
-}
-
-.me { 
-    display: flex;
-    margin: 10px;
-    border-radius: 90px;
 }
