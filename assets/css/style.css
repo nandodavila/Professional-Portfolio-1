@@ -32,6 +32,7 @@ h1{
     display: inline-flex;
     margin: 10px;
     border-radius: 90px;
+    padding: 10px;
 }
 
 nav {
@@ -54,25 +55,99 @@ nav ul li a {
     font-size: 18px;
 }
 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 article {
-    display: inline-flex;
+    display: inline-flex
 }
 
 article h2 {
+    flex: 20%;
+    display: inline-flex;
     font-size: 48px;
     text-align: center;
     padding: 10px;
 }
 
 article p {
+    display: inline-flex;
+    height: 200px;
+    flex: 80%;
     border-radius: 10px;
-    border-width: 100%;
     border-color: var(--textColor);
     border-width: 5px;
-    height: 200px;
     border-style: groove;
     margin: 10px;
     background-color: #041a28;
     color: var(--textColor);
     text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 80%;
+}
+
+section h3 {
+    border-style: double;
+    font-size: 48px;
+    padding: 10px;
+}
+
+.codeRefractor h4 {
+    font-size: 32px;
+    bottom: 50%; 
+    margin: 10px;
+    padding: 10px;
+    color: #041a28;
+}
+
+.codeRefractor {
+    border-radius: 10px;
+    border-width: medium;
+    border-style: groove;
+}
+
+.workImg {
+    border-radius: 10px;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-style: double;
+    flex: 0 0 200px;
+    display: block;
+}
+
+aside {
+    flex: 20%;
+    border-style: groove;
+    padding: 20px;
+}
+
+aside h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+aside ul li {
+    text-align: center;
+    padding: 100px 0 100px 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    position: sticky;
+    bottom: 0;
+    background-color: #041a28;
 }
