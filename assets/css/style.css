@@ -59,30 +59,38 @@ main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px solid red
+    border: 2px solid red/*take this out later*/
 }
 
 div {
     flex: 6 1 200px;
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap: wrap;
     flex-direction: row;
-    border: 2px solid yellow;
+    border: 2px solid yellow;/*take this out later*/
 }
 
+article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid orange; /*take this out later*/
+
+}
 article h2 {
-    /* display: inline-flex; */
+    flex: 1 1 200px;
+    display: inline;
     font-size: 48px;
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    width: 800px;
     border-style: groove;
     border-color: var(--textColor);
 }
 
 article p {
-    /* display: inline-flex; */
+    display: inline;
+    flex: 5 1 200px;
     height: fit-content;
     border-radius: 10px;
     border-color: var(--textColor);
@@ -95,13 +103,15 @@ article p {
 }
 
 section {
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap; */
+    flex-wrap: wrap;
+    border: 2px solid darkmagenta;/*take this out later */
 }
 
 section h3 {
-    /* display: inline-flex; */
+    display: inline;
+    flex: 1 1 200px;
     font-size: 48px;
     text-align: center;
     padding: 10px;
@@ -122,7 +132,8 @@ section h3 {
 }
 
 .codeRefractor {
-    /* display: inline-flex; */
+    display: inline;
+    flex: 4 1 200px;
     height: fit-content;
     border-radius: 10px;
     border-color: var(--textColor);
@@ -135,18 +146,19 @@ section h3 {
 }
 
 .workFlex {
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: row; */
+    flex-direction: row;
+    border: 2px solid blue; /*take out later*/
 }
 
 .workFlex h3 {
-    /* display: inline-flex; */
+    display: inline;
+    flex: 2 1 200px;
     font-size: 48px;
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    width: 375px;
     border-style: groove;
     border-color: var(--textColor);
 }
@@ -156,7 +168,9 @@ section h3 {
 }
 
 .work {
-    /* display: inline-flex; */
+    display: inline;
+    flex: 1 1 200px;
+    justify-content: s;
     height: fit-content;
     border-radius: 10px;
     border-color: var(--textColor);
