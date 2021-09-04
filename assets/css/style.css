@@ -25,7 +25,7 @@ header {
 h1{
     font-size: 48px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .me { 
@@ -55,28 +55,27 @@ nav ul li a {
     font-size: 18px;
 }
 
-main {
+
+article {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: inherit;
     flex-direction: row;
 }
 
-article {
-    display: inline-flex
-}
-
 article h2 {
-    flex: 20%;
     display: inline-flex;
     font-size: 48px;
     text-align: center;
     padding: 10px;
+    box-sizing: border-box;
+    width: 800px;
+    border-style: groove;
+    border-color: var(--textColor);
 }
 
 article p {
     display: inline-flex;
-    height: 200px;
-    flex: 80%;
+    height: fit-content;
     border-radius: 10px;
     border-color: var(--textColor);
     border-width: 5px;
@@ -91,27 +90,57 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 80%;
 }
 
 section h3 {
-    border-style: double;
+    display: inline-flex;
     font-size: 48px;
+    text-align: center;
     padding: 10px;
+    box-sizing: border-box;
+    width: 375px;
+    border-style: groove;
+    border-color: var(--textColor);
+
 }
 
 .codeRefractor h4 {
     font-size: 32px;
+    position: absolute;
     bottom: 50%; 
     margin: 10px;
     padding: 10px;
-    color: #041a28;
+    color: var(--textColor)
 }
 
 .codeRefractor {
+    display: inline-flex;
+    height: fit-content;
     border-radius: 10px;
-    border-width: medium;
+    border-color: var(--textColor);
+    border-width: 5px;
     border-style: groove;
+    margin: 10px;
+    background-color: #041a28;
+    color: var(--textColor);
+    text-align: center;
+}
+
+.workFlex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.workFlex h3 {
+    display: inline-flex;
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 375px;
+    border-style: groove;
+    border-color: var(--textColor);
 }
 
 .workImg {
@@ -119,16 +148,30 @@ section h3 {
 }
 
 .work {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-style: double;
-    flex: 0 0 200px;
-    display: block;
+    display: inline-flex;
+    height: fit-content;
+    border-radius: 10px;
+    border-color: var(--textColor);
+    border-width: 5px;
+    border-style: groove;
+    margin: 10px;
+    background-color: #041a28;
+    color: var(--textColor);
+    text-align: center;
+}
+
+.work h4 {
+    font-size: 32px;
+    position: absolute; 
+    margin: 10px;
+    padding: 10px;
+    color: var(--textColor)
 }
 
 aside {
-    flex: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     border-style: groove;
     padding: 20px;
 }
@@ -138,10 +181,25 @@ aside h3 {
     text-align: center;
 }
 
-aside ul li {
+aside p {
+    display: inline-block;
     text-align: center;
-    padding: 100px 0 100px 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: solid #041a28 5px;
 }
+
+aside .contactMe {
+    text-align: center;
+}
+
+aside .contactMe img {
+    width: 80%;
+    height: 80%;
+} 
 
 footer {
     width: 100%;
