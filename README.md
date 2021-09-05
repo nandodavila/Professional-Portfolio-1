@@ -12,4 +12,6 @@ As my skills improve I will continue to add and improve this portfolio. This Por
 * Other logo pictures take you to my coresponding profiles.
 * The application is responsive.
 
+https://nandodavila.github.io/Professional-Portfolio-1/
 
+![screenshot](assets/images/PortfolioScreenshot.PNG)
