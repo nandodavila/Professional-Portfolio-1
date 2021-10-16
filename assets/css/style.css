@@ -142,8 +142,8 @@ section h3 {
 }
 
 .codeRefractor {
-    display: inline;
-    flex: 5 1 200px;
+    /* display: inline;
+    flex: 5 1 200px; */
     height: fit-content;
     border-radius: 10px;
     border-color: var(--textColor);
@@ -156,15 +156,15 @@ section h3 {
 }
 
 .workFlex {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     flex-direction: row;
     /* border: 2px solid blue; take out later */
 }
 
 .workFlex h3 {
-    display: inline;
-    flex: 2 1 200px;
+    /* display: inline;
+    flex: 2 1 200px; */
     font-size: 48px;
     text-align: center;
     padding: 10px;
