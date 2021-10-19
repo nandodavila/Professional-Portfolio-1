@@ -39,18 +39,6 @@ h1{
     padding: 10px;
 }
 
-/* nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-} */
-
-/* nav ul li {
-    display: flex;
-    flex-wrap: wrap;
-    display: inline-block;
-    padding: 30px;
-} */
 
 .custom-nav-link {
     color: lightsteelblue;
@@ -60,44 +48,10 @@ h1{
 }
 
 main{ 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* border: 2px solid red; take this out later */
+    border: 2px solid red;
 }
 
-div {
-    flex: 6 1 200px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    /* border: 2px solid yellow; take this out later */
-}
-
-article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* border: 2px solid orange; take this out later */
-
-}
-article h2 {
-    flex: 1 0 200px;
-    display: inline;
-    font-size: 48px;
-    text-align: center;
-    padding: 10px;
-    box-sizing: border-box;
-    border-right-style: inset;
-    border-bottom-style: inset ;
-    border-width: 10px;
-    border-color: var(--textColor);
-    min-width: 350px;
-}
-
-article p {
-    display: inline;
-    flex: 5 1 200px;
+.about-me {
     height: fit-content;
     border-radius: 10px;
     border-color: var(--textColor);
@@ -110,27 +64,63 @@ article p {
     min-width: 400px;
 }
 
-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* border: 2px solid darkmagenta; take this out later  */
+article {
+    padding: 15px;
+    border: 5px solid #041a28;
+    border-radius: 10px;
 }
 
-section h3 {
-    display: inline;
-    flex: 1 1 200px;
+#aboutMe {
     font-size: 48px;
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    width: 375px;
-    border-right-style: inset;
-    border-bottom-style: inset ;
+    border-bottom-style: inset;
     border-width: 10px;
     border-color: var(--textColor);
     min-width: 350px;
+    
+}
 
+.best-work-div{
+    padding: 15px;
+    border: 5px solid #041a28;
+    border-radius: 10px;
+}
+
+.best-work {
+    height: fit-content;
+    border-radius: 10px;
+    border-color: var(--textColor);
+    border-width: 5px;
+    border-style: groove;
+    margin: 10px;
+    background-color: #041a28;
+    color: var(--textColor);
+    text-align: center;
+    min-width: 400px;
+}
+
+#myWork {
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom-style: inset;
+    border-width: 10px;
+    border-color: var(--textColor);
+    min-width: 350px;
+}
+
+#moreWork {
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom-style: inset;
+    border-width: 10px;
+    border-color: var(--textColor);
+    min-width: 350px;
 }
 
 .codeRefractor h4 {
@@ -142,8 +132,6 @@ section h3 {
 }
 
 .codeRefractor {
-    /* display: inline;
-    flex: 5 1 200px; */
     height: fit-content;
     border-radius: 10px;
     border-color: var(--textColor);
@@ -155,16 +143,10 @@ section h3 {
     text-align: center;
 }
 
-.workFlex {
-    /* display: flex;
-    flex-wrap: wrap; */
-    flex-direction: row;
-    /* border: 2px solid blue; take out later */
-}
+
 
 .workFlex h3 {
-    /* display: inline;
-    flex: 2 1 200px; */
+    
     font-size: 48px;
     text-align: center;
     padding: 10px;
@@ -204,8 +186,18 @@ section h3 {
     color: var(--textColor)
 }
 
-aside {
-    flex: 1 0 200px;
+#contactMe{
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom-style: inset;
+    border-width: 10px;
+    border-color: var(--textColor);
+    min-width: 350px;
+
+}
+.contact-me {
     margin-left: auto;
     margin-right: auto;
     height: 100%;
@@ -214,13 +206,7 @@ aside {
     padding: 20px;
 }
 
-aside h3 {
-    font-size: 24px;
-    text-align: center;
-}
-
-aside p {
-    display: block;
+.contact-me p {
     text-align: center;
     margin: 50px 50px;
     box-sizing: border-box;
@@ -229,15 +215,6 @@ aside p {
     border: solid var(--textColor) 5px;
 }
 
-aside .contactMe {
-    text-align: center;
-    justify-content: center;
-}
-
-aside .contactMe img {
-    width: 80%;
-    height: 80%;
-} 
 
 footer {
     width: 100%;
